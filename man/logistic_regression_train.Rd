@@ -102,23 +102,21 @@ either 0 or 1.  For more classes, see the softmax regression implementation.
 }
 \examples{
 # 
-# #' # \dontrun{
+# 
 # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 # X <- as.matrix(read.csv("http://datasets.mlpack.org/iris.csv",
 # header=FALSE))
 # y <- as.matrix(read.csv("http://datasets.mlpack.org/iris_labels.csv",
 # header=FALSE))
-# pp <- preprocess_split(input=X, input_label=as.matrix(1:nrow(X)),
-# test_ratio=0.2)
+# pp <- preprocess_split(input=X, input_label=y, test_ratio=0.2)
 # X_train <- pp[["training"]]
 # X_test <- pp[["test"]]
-# # labels are indices to operate on both factors or numeric data
-# y_train <- y[as.integer(pp[["training_labels"]]), 1]
-# y_test <- y[as.integer(pp[["test_labels"]]), 1]
+# y_train <- pp[["training_labels"]]
+# y_test <- pp[["test_labels"]]
 # 
 # model <- logistic_regression_train(training=X_train, labels=y_train,
 #   lambda=0.1)
-#   }
+#   
 }
 \author{
 mlpack developers

@@ -68,9 +68,8 @@
 #'
 #' @export
 #' @examples
-
 #' # 
-#' # #' # \dontrun{
+#' # 
 #' # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 #' # X <- as.matrix(read.csv("http://datasets.mlpack.org/admission_predict.csv",
 #' # header=FALSE))
@@ -87,7 +86,7 @@
 #' # 
 #' # model <- lars_train(input=X_train, responses=y_train, lambda1=1e-05,
 #' #   lambda2=1e-06)
-#' #   }
+#' #   
 lars_train <- function(input,
                        responses,
                        lambda1 = 0,

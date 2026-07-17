@@ -67,19 +67,21 @@
 #' prevent overfitting) can be specified with the "lambda" option, and the
 #' number of classes can be manually specified with the "num_classes"and if an
 #' intercept term is not desired in the model, the "no_intercept" parameter can
-#' be specified.Margin of difference between correct class and other classes can
-#' be specified with the "delta" option.The optimizer used to train the model
-#' can be specified with the "optimizer" parameter.  Available options are
-#' 'psgd' (parallel stochastic gradient descent) and 'lbfgs' (the L-BFGS
-#' optimizer).  There are also various parameters for the optimizer; the
-#' "max_iterations" parameter specifies the maximum number of allowed
-#' iterations, and the "tolerance" parameter specifies the tolerance for
-#' convergence.  For the parallel SGD optimizer, the "step_size" parameter
-#' controls the step size taken at each iteration by the optimizer and the
-#' maximum number of epochs (specified with "epochs"). If the objective function
-#' for your data is oscillating between Inf and 0, the step size is probably too
-#' large.  There are more parameters for the optimizers, but the C++ interface
-#' must be used to access these.
+#' be specified.
+#' 
+#' Margin of difference between correct class and other classes can be specified
+#' with the "delta" option.The optimizer used to train the model can be
+#' specified with the "optimizer" parameter.  Available options are 'psgd'
+#' (parallel stochastic gradient descent) and 'lbfgs' (the L-BFGS optimizer). 
+#' There are also various parameters for the optimizer; the "max_iterations"
+#' parameter specifies the maximum number of allowed iterations, and the
+#' "tolerance" parameter specifies the tolerance for convergence.  For the
+#' parallel SGD optimizer, the "step_size" parameter controls the step size
+#' taken at each iteration by the optimizer and the maximum number of epochs
+#' (specified with "epochs"). If the objective function for your data is
+#' oscillating between Inf and 0, the step size is probably too large.  There
+#' are more parameters for the optimizers, but the C++ interface must be used to
+#' access these.
 #' 
 #' Optionally, the model can be used to predict the labels for another matrix of
 #' data points, if "test" is specified.  The "test" parameter can be specified

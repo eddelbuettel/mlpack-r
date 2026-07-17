@@ -35,7 +35,7 @@ lars_predict <- function(input_model,
   # Process each input argument before calling the binding.
   SetParamLARSPtr(p, "input_model", input_model)
 
-  SetParamMat(p, "test", to_matrix(test), TRUE)
+  SetParamMat(p, "test", to_matrix(test), FALSE)
 
   SetParamBool(p, "verbose", verbose)
 

@@ -41,7 +41,7 @@ using ordinary least squares. This solves the problem
 }
 \examples{
 # 
-# #' # \dontrun{
+# 
 # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 # X <-
 # as.matrix(read.csv("https://datasets.mlpack.org/admission_predict.csv",
@@ -59,7 +59,7 @@ using ordinary least squares. This solves the problem
 # 
 # model <- linear_regression_train(training=X_train,
 # training_responses=y_train)
-#   }
+#   
 }
 \author{
 mlpack developers

@@ -39,9 +39,8 @@
 #'
 #' @export
 #' @examples
-
 #' # 
-#' # #' # \dontrun{
+#' # 
 #' # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 #' # X <- as.matrix(read.csv("http://datasets.mlpack.org/admission_predict.csv",
 #' # header=FALSE))
@@ -58,7 +57,7 @@
 #' # 
 #' # model <- bayesian_linear_regression_train(input=X_train, responses=y_train,
 #' #   center=1, scale=0)
-#' #   }
+#' #   
 bayesian_linear_regression_train <- function(input,
                                              responses,
                                              center = FALSE,

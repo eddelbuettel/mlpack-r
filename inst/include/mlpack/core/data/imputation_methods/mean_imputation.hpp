@@ -123,15 +123,14 @@ class MeanImputation
       {
         if (columnMajor)
         {
-          meanValue = mean(vectorise(input.submat(
-              arma::uvec({ arma::uword(dimension) }),
+          meanValue = mean(vectorise(input.submat(arma::uvec({ dimension }),
               find(input.row(dimension) != missingValue))));
         }
         else
         {
           meanValue = mean(vectorise(input.submat(
               find(input.col(dimension) != missingValue),
-              arma::uvec({ arma::uword(dimension) }))));
+              arma::uvec({ dimension }))));
         }
       }
     #endif

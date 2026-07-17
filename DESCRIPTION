@@ -1,7 +1,7 @@
 Package: mlpack
 Title: 'Rcpp' Integration for the 'mlpack' Library
-Version: 4.8.0
-Date: 2026-06-09
+Version: 4.8.1
+Date: 2026-07-17
 Authors@R: c(
     person("Yashwant", "Singh Parihar", email = "yashwantsingh.sngh@gmail.com", role = c("aut", "ctb", "cph")),
     person("Ryan", "Curtin", email = "ryan@ratml.org", role = c("aut", "ctb", "cph", "cre")),
@@ -166,16 +166,14 @@ Description: A fast, flexible machine learning library, written in C++, that
 License: BSD_3_clause + file LICENSE
 Depends: R (>= 4.3.0)
 Imports: Rcpp (>= 0.12.12)
-LinkingTo: Rcpp, RcppArmadillo (>= 0.10.8.2), RcppEnsmallen (>=
-        0.2.10.0)
-Suggests: testthat (>= 2.1.0)
-URL: https://www.mlpack.org/doc/user/bindings/r.html,
-        https://github.com/mlpack/mlpack
+LinkingTo: Rcpp, RcppArmadillo (>= 0.10.8.2), RcppEnsmallen (>= 0.2.10.0)
+Suggests: tinytest, tinytest2JUnit
+URL: https://www.mlpack.org/doc/user/bindings/r.html, https://github.com/mlpack/mlpack
 BugReports: https://github.com/mlpack/mlpack/issues
 Encoding: UTF-8
 Config/roxygen2/version: 8.0.0
 NeedsCompilation: yes
-Packaged: 2026-06-09 21:54:16 UTC; runner
+Packaged: 2026-07-17 19:02:41 UTC; edd
 Author: Yashwant Singh Parihar [aut, ctb, cph],
   Ryan Curtin [aut, ctb, cph, cre],
   Dirk Eddelbuettel [aut, ctb, cph],

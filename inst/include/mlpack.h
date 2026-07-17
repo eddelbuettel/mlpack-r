@@ -41,6 +41,22 @@
 // If we are on Windows 8 or older, simply disable httplib since it will fail to
 // compile on CRAN.
 #if defined(_WIN32) && defined(_WIN32_WINNT) && _WIN32_WINNT < 0x0A00
+  #undef  MLPACK_DISABLE_HTTPLIB
+  #define MLPACK_DISABLE_HTTPLIB
+#endif
+
+#if !defined(MLPACK_R_ENABLE_STB)
+  #undef  MLPACK_DISABLE_STB
+  #define MLPACK_DISABLE_STB
+#endif
+
+#if !defined(MLPACK_R_ENABLE_DR_LIBS)
+  #undef  MLPACK_DISABLE_DR_LIBS
+  #define MLPACK_DISABLE_DR_LIBS
+#endif
+
+#if !defined(MLPACK_R_ENABLE_HTTPLIB)
+  #undef  MLPACK_DISABLE_HTTPLIB
   #define MLPACK_DISABLE_HTTPLIB
 #endif
 

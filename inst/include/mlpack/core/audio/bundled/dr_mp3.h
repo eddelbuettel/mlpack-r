@@ -88,8 +88,18 @@ typedef unsigned int            drmp3_uint32;
     typedef   signed __int64    drmp3_int64;
     typedef unsigned __int64    drmp3_uint64;
 #else
+    #if defined(__clang__) || (defined(__GNUC__) && (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6)))
+        #pragma GCC diagnostic push
+        #pragma GCC diagnostic ignored "-Wlong-long"
+        #if defined(__clang__)
+            #pragma GCC diagnostic ignored "-Wc++11-long-long"
+        #endif
+    #endif
     typedef   signed long long  drmp3_int64;
     typedef unsigned long long  drmp3_uint64;
+    #if defined(__clang__) || (defined(__GNUC__) && (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6)))
+        #pragma GCC diagnostic pop
+    #endif
 #endif
 #if defined(__LP64__) || defined(_WIN64) || (defined(__x86_64__) && !defined(__ILP32__)) || defined(_M_X64) || defined(__ia64) || defined (_M_IA64) || defined(__aarch64__) || defined(_M_ARM64) || defined(_M_ARM64EC) || defined(__powerpc64__)
     typedef drmp3_uint64        drmp3_uintptr;
@@ -1224,6 +1234,10 @@ static float drmp3_L3_ldexp_q2(float y, int exp_q2)
 I've had reports of GCC 14 throwing an incorrect -Wstringop-overflow warning here. This is an attempt
 to silence this warning.
 */
+#if (defined(__GNUC__) && (__GNUC__ >= 13)) && !defined(__clang__)
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wstringop-overflow"
+#endif
 static void drmp3_L3_decode_scalefactors(const drmp3_uint8 *hdr, drmp3_uint8 *ist_pos, drmp3_bs *bs, const drmp3_L3_gr_info *gr, float *scf, int ch)
 {
     static const drmp3_uint8 g_scf_partitions[3][28] = {
@@ -1285,6 +1299,9 @@ static void drmp3_L3_decode_scalefactors(const drmp3_uint8 *hdr, drmp3_uint8 *is
         scf[i] = drmp3_L3_ldexp_q2(gain, iscf[i] << scf_shift);
     }
 }
+#if (defined(__GNUC__) && (__GNUC__ >= 13)) && !defined(__clang__)
+    #pragma GCC diagnostic pop
+#endif
 
 static const float g_drmp3_pow43[129 + 16] = {
     0,-1,-2.519842f,-4.326749f,-6.349604f,-8.549880f,-10.902724f,-13.390518f,-16.000000f,-18.720754f,-21.544347f,-24.463781f,-27.473142f,-30.567351f,-33.741992f,-36.993181f,

@@ -87,7 +87,7 @@ via the "input_model" parameter.
 }
 \examples{
 # 
-# #' # \dontrun{
+# 
 # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 # X <- as.matrix(read.csv("http://datasets.mlpack.org/admission_predict.csv",
 # header=FALSE))
@@ -104,7 +104,7 @@ via the "input_model" parameter.
 # 
 # model <- lars_train(input=X_train, responses=y_train, lambda1=1e-05,
 #   lambda2=1e-06)
-#   }
+#   
 }
 \author{
 mlpack developers

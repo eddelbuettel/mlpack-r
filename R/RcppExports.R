@@ -2,814 +2,874 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 adaboost_call <- function(params, timers) {
-    invisible(.Call('_mlpack_adaboost_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_adaboost_call`, params, timers))
 }
 
 GetParamAdaBoostModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamAdaBoostModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamAdaBoostModelPtr`, params, paramName, inputModels)
 }
 
 SetParamAdaBoostModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamAdaBoostModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamAdaBoostModelPtr`, params, paramName, ptr))
 }
 
 SerializeAdaBoostModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeAdaBoostModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeAdaBoostModelPtr`, ptr)
 }
 
 DeserializeAdaBoostModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeAdaBoostModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeAdaBoostModelPtr`, str)
 }
 
 adaboost_classify_call <- function(params, timers) {
-    invisible(.Call('_mlpack_adaboost_classify_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_adaboost_classify_call`, params, timers))
 }
 
 adaboost_probabilities_call <- function(params, timers) {
-    invisible(.Call('_mlpack_adaboost_probabilities_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_adaboost_probabilities_call`, params, timers))
 }
 
 adaboost_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_adaboost_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_adaboost_train_call`, params, timers))
 }
 
 approx_kfn_call <- function(params, timers) {
-    invisible(.Call('_mlpack_approx_kfn_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_approx_kfn_call`, params, timers))
 }
 
 GetParamApproxKFNModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamApproxKFNModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamApproxKFNModelPtr`, params, paramName, inputModels)
 }
 
 SetParamApproxKFNModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamApproxKFNModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamApproxKFNModelPtr`, params, paramName, ptr))
 }
 
 SerializeApproxKFNModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeApproxKFNModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeApproxKFNModelPtr`, ptr)
 }
 
 DeserializeApproxKFNModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeApproxKFNModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeApproxKFNModelPtr`, str)
 }
 
 bayesian_linear_regression_call <- function(params, timers) {
-    invisible(.Call('_mlpack_bayesian_linear_regression_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_bayesian_linear_regression_call`, params, timers))
 }
 
 GetParamBayesianLinearRegressionPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamBayesianLinearRegressionPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamBayesianLinearRegressionPtr`, params, paramName, inputModels)
 }
 
 SetParamBayesianLinearRegressionPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamBayesianLinearRegressionPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamBayesianLinearRegressionPtr`, params, paramName, ptr))
 }
 
 SerializeBayesianLinearRegressionPtr <- function(ptr) {
-    .Call('_mlpack_SerializeBayesianLinearRegressionPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeBayesianLinearRegressionPtr`, ptr)
 }
 
 DeserializeBayesianLinearRegressionPtr <- function(str) {
-    .Call('_mlpack_DeserializeBayesianLinearRegressionPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeBayesianLinearRegressionPtr`, str)
 }
 
 bayesian_linear_regression_predict_call <- function(params, timers) {
-    invisible(.Call('_mlpack_bayesian_linear_regression_predict_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_bayesian_linear_regression_predict_call`, params, timers))
 }
 
 bayesian_linear_regression_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_bayesian_linear_regression_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_bayesian_linear_regression_train_call`, params, timers))
 }
 
 cf_call <- function(params, timers) {
-    invisible(.Call('_mlpack_cf_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_cf_call`, params, timers))
 }
 
 GetParamCFModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamCFModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamCFModelPtr`, params, paramName, inputModels)
 }
 
 SetParamCFModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamCFModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamCFModelPtr`, params, paramName, ptr))
 }
 
 SerializeCFModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeCFModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeCFModelPtr`, ptr)
 }
 
 DeserializeCFModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeCFModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeCFModelPtr`, str)
 }
 
 dbscan_call <- function(params, timers) {
-    invisible(.Call('_mlpack_dbscan_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_dbscan_call`, params, timers))
 }
 
 decision_tree_call <- function(params, timers) {
-    invisible(.Call('_mlpack_decision_tree_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_decision_tree_call`, params, timers))
 }
 
 GetParamDecisionTreeModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamDecisionTreeModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamDecisionTreeModelPtr`, params, paramName, inputModels)
 }
 
 SetParamDecisionTreeModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamDecisionTreeModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamDecisionTreeModelPtr`, params, paramName, ptr))
 }
 
 SerializeDecisionTreeModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeDecisionTreeModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeDecisionTreeModelPtr`, ptr)
 }
 
 DeserializeDecisionTreeModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeDecisionTreeModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeDecisionTreeModelPtr`, str)
 }
 
 decision_tree_classify_call <- function(params, timers) {
-    invisible(.Call('_mlpack_decision_tree_classify_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_decision_tree_classify_call`, params, timers))
 }
 
 decision_tree_probabilities_call <- function(params, timers) {
-    invisible(.Call('_mlpack_decision_tree_probabilities_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_decision_tree_probabilities_call`, params, timers))
 }
 
 decision_tree_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_decision_tree_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_decision_tree_train_call`, params, timers))
 }
 
 det_call <- function(params, timers) {
-    invisible(.Call('_mlpack_det_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_det_call`, params, timers))
 }
 
 GetParamDTreePtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamDTreePtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamDTreePtr`, params, paramName, inputModels)
 }
 
 SetParamDTreePtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamDTreePtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamDTreePtr`, params, paramName, ptr))
 }
 
 SerializeDTreePtr <- function(ptr) {
-    .Call('_mlpack_SerializeDTreePtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeDTreePtr`, ptr)
 }
 
 DeserializeDTreePtr <- function(str) {
-    .Call('_mlpack_DeserializeDTreePtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeDTreePtr`, str)
 }
 
 emst_call <- function(params, timers) {
-    invisible(.Call('_mlpack_emst_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_emst_call`, params, timers))
 }
 
 fastmks_call <- function(params, timers) {
-    invisible(.Call('_mlpack_fastmks_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_fastmks_call`, params, timers))
 }
 
 GetParamFastMKSModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamFastMKSModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamFastMKSModelPtr`, params, paramName, inputModels)
 }
 
 SetParamFastMKSModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamFastMKSModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamFastMKSModelPtr`, params, paramName, ptr))
 }
 
 SerializeFastMKSModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeFastMKSModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeFastMKSModelPtr`, ptr)
 }
 
 DeserializeFastMKSModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeFastMKSModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeFastMKSModelPtr`, str)
 }
 
 gmm_generate_call <- function(params, timers) {
-    invisible(.Call('_mlpack_gmm_generate_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_gmm_generate_call`, params, timers))
 }
 
 gmm_probability_call <- function(params, timers) {
-    invisible(.Call('_mlpack_gmm_probability_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_gmm_probability_call`, params, timers))
 }
 
 gmm_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_gmm_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_gmm_train_call`, params, timers))
 }
 
 GetParamGMMPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamGMMPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamGMMPtr`, params, paramName, inputModels)
 }
 
 SetParamGMMPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamGMMPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamGMMPtr`, params, paramName, ptr))
 }
 
 SerializeGMMPtr <- function(ptr) {
-    .Call('_mlpack_SerializeGMMPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeGMMPtr`, ptr)
 }
 
 DeserializeGMMPtr <- function(str) {
-    .Call('_mlpack_DeserializeGMMPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeGMMPtr`, str)
 }
 
 hmm_generate_call <- function(params, timers) {
-    invisible(.Call('_mlpack_hmm_generate_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_hmm_generate_call`, params, timers))
 }
 
 hmm_loglik_call <- function(params, timers) {
-    invisible(.Call('_mlpack_hmm_loglik_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_hmm_loglik_call`, params, timers))
 }
 
 hmm_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_hmm_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_hmm_train_call`, params, timers))
 }
 
 GetParamHMMModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamHMMModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamHMMModelPtr`, params, paramName, inputModels)
 }
 
 SetParamHMMModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamHMMModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamHMMModelPtr`, params, paramName, ptr))
 }
 
 SerializeHMMModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeHMMModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeHMMModelPtr`, ptr)
 }
 
 DeserializeHMMModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeHMMModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeHMMModelPtr`, str)
 }
 
 hmm_viterbi_call <- function(params, timers) {
-    invisible(.Call('_mlpack_hmm_viterbi_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_hmm_viterbi_call`, params, timers))
 }
 
 hoeffding_tree_call <- function(params, timers) {
-    invisible(.Call('_mlpack_hoeffding_tree_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_hoeffding_tree_call`, params, timers))
 }
 
 GetParamHoeffdingTreeModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamHoeffdingTreeModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamHoeffdingTreeModelPtr`, params, paramName, inputModels)
 }
 
 SetParamHoeffdingTreeModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamHoeffdingTreeModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamHoeffdingTreeModelPtr`, params, paramName, ptr))
 }
 
 SerializeHoeffdingTreeModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeHoeffdingTreeModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeHoeffdingTreeModelPtr`, ptr)
 }
 
 DeserializeHoeffdingTreeModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeHoeffdingTreeModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeHoeffdingTreeModelPtr`, str)
+}
+
+hoeffding_tree_classify_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_hoeffding_tree_classify_call`, params, timers))
+}
+
+hoeffding_tree_probabilities_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_hoeffding_tree_probabilities_call`, params, timers))
+}
+
+hoeffding_tree_train_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_hoeffding_tree_train_call`, params, timers))
 }
 
 image_converter_call <- function(params, timers) {
-    invisible(.Call('_mlpack_image_converter_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_image_converter_call`, params, timers))
 }
 
 kde_call <- function(params, timers) {
-    invisible(.Call('_mlpack_kde_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_kde_call`, params, timers))
 }
 
 GetParamKDEModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamKDEModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamKDEModelPtr`, params, paramName, inputModels)
 }
 
 SetParamKDEModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamKDEModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamKDEModelPtr`, params, paramName, ptr))
 }
 
 SerializeKDEModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeKDEModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeKDEModelPtr`, ptr)
 }
 
 DeserializeKDEModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeKDEModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeKDEModelPtr`, str)
 }
 
 kernel_pca_call <- function(params, timers) {
-    invisible(.Call('_mlpack_kernel_pca_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_kernel_pca_call`, params, timers))
 }
 
 kfn_call <- function(params, timers) {
-    invisible(.Call('_mlpack_kfn_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_kfn_call`, params, timers))
 }
 
 GetParamKFNModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamKFNModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamKFNModelPtr`, params, paramName, inputModels)
 }
 
 SetParamKFNModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamKFNModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamKFNModelPtr`, params, paramName, ptr))
 }
 
 SerializeKFNModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeKFNModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeKFNModelPtr`, ptr)
 }
 
 DeserializeKFNModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeKFNModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeKFNModelPtr`, str)
 }
 
 kmeans_call <- function(params, timers) {
-    invisible(.Call('_mlpack_kmeans_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_kmeans_call`, params, timers))
 }
 
 knn_call <- function(params, timers) {
-    invisible(.Call('_mlpack_knn_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_knn_call`, params, timers))
 }
 
 GetParamKNNModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamKNNModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamKNNModelPtr`, params, paramName, inputModels)
 }
 
 SetParamKNNModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamKNNModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamKNNModelPtr`, params, paramName, ptr))
 }
 
 SerializeKNNModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeKNNModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeKNNModelPtr`, ptr)
 }
 
 DeserializeKNNModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeKNNModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeKNNModelPtr`, str)
 }
 
 krann_call <- function(params, timers) {
-    invisible(.Call('_mlpack_krann_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_krann_call`, params, timers))
 }
 
 GetParamRAModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamRAModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamRAModelPtr`, params, paramName, inputModels)
 }
 
 SetParamRAModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamRAModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamRAModelPtr`, params, paramName, ptr))
 }
 
 SerializeRAModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeRAModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeRAModelPtr`, ptr)
 }
 
 DeserializeRAModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeRAModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeRAModelPtr`, str)
 }
 
 lars_call <- function(params, timers) {
-    invisible(.Call('_mlpack_lars_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_lars_call`, params, timers))
 }
 
 GetParamLARSPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLARSPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLARSPtr`, params, paramName, inputModels)
 }
 
 SetParamLARSPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLARSPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLARSPtr`, params, paramName, ptr))
 }
 
 SerializeLARSPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLARSPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLARSPtr`, ptr)
 }
 
 DeserializeLARSPtr <- function(str) {
-    .Call('_mlpack_DeserializeLARSPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLARSPtr`, str)
 }
 
 lars_predict_call <- function(params, timers) {
-    invisible(.Call('_mlpack_lars_predict_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_lars_predict_call`, params, timers))
 }
 
 lars_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_lars_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_lars_train_call`, params, timers))
 }
 
 linear_regression_call <- function(params, timers) {
-    invisible(.Call('_mlpack_linear_regression_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_linear_regression_call`, params, timers))
 }
 
 GetParamLinearRegressionPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLinearRegressionPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLinearRegressionPtr`, params, paramName, inputModels)
 }
 
 SetParamLinearRegressionPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLinearRegressionPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLinearRegressionPtr`, params, paramName, ptr))
 }
 
 SerializeLinearRegressionPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLinearRegressionPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLinearRegressionPtr`, ptr)
 }
 
 DeserializeLinearRegressionPtr <- function(str) {
-    .Call('_mlpack_DeserializeLinearRegressionPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLinearRegressionPtr`, str)
 }
 
 linear_regression_predict_call <- function(params, timers) {
-    invisible(.Call('_mlpack_linear_regression_predict_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_linear_regression_predict_call`, params, timers))
 }
 
 linear_regression_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_linear_regression_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_linear_regression_train_call`, params, timers))
 }
 
 linear_svm_call <- function(params, timers) {
-    invisible(.Call('_mlpack_linear_svm_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_linear_svm_call`, params, timers))
 }
 
 GetParamLinearSVMModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLinearSVMModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLinearSVMModelPtr`, params, paramName, inputModels)
 }
 
 SetParamLinearSVMModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLinearSVMModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLinearSVMModelPtr`, params, paramName, ptr))
 }
 
 SerializeLinearSVMModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLinearSVMModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLinearSVMModelPtr`, ptr)
 }
 
 DeserializeLinearSVMModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeLinearSVMModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLinearSVMModelPtr`, str)
+}
+
+linear_svm_classify_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_linear_svm_classify_call`, params, timers))
+}
+
+linear_svm_scores_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_linear_svm_scores_call`, params, timers))
+}
+
+linear_svm_train_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_linear_svm_train_call`, params, timers))
 }
 
 lmnn_call <- function(params, timers) {
-    invisible(.Call('_mlpack_lmnn_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_lmnn_call`, params, timers))
 }
 
 local_coordinate_coding_call <- function(params, timers) {
-    invisible(.Call('_mlpack_local_coordinate_coding_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_local_coordinate_coding_call`, params, timers))
 }
 
 GetParamLocalCoordinateCodingPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLocalCoordinateCodingPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLocalCoordinateCodingPtr`, params, paramName, inputModels)
 }
 
 SetParamLocalCoordinateCodingPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLocalCoordinateCodingPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLocalCoordinateCodingPtr`, params, paramName, ptr))
 }
 
 SerializeLocalCoordinateCodingPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLocalCoordinateCodingPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLocalCoordinateCodingPtr`, ptr)
 }
 
 DeserializeLocalCoordinateCodingPtr <- function(str) {
-    .Call('_mlpack_DeserializeLocalCoordinateCodingPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLocalCoordinateCodingPtr`, str)
 }
 
 logistic_regression_call <- function(params, timers) {
-    invisible(.Call('_mlpack_logistic_regression_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_logistic_regression_call`, params, timers))
 }
 
 GetParamLogisticRegressionPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLogisticRegressionPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLogisticRegressionPtr`, params, paramName, inputModels)
 }
 
 SetParamLogisticRegressionPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLogisticRegressionPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLogisticRegressionPtr`, params, paramName, ptr))
 }
 
 SerializeLogisticRegressionPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLogisticRegressionPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLogisticRegressionPtr`, ptr)
 }
 
 DeserializeLogisticRegressionPtr <- function(str) {
-    .Call('_mlpack_DeserializeLogisticRegressionPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLogisticRegressionPtr`, str)
 }
 
 logistic_regression_classify_call <- function(params, timers) {
-    invisible(.Call('_mlpack_logistic_regression_classify_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_logistic_regression_classify_call`, params, timers))
 }
 
 logistic_regression_probabilities_call <- function(params, timers) {
-    invisible(.Call('_mlpack_logistic_regression_probabilities_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_logistic_regression_probabilities_call`, params, timers))
 }
 
 logistic_regression_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_logistic_regression_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_logistic_regression_train_call`, params, timers))
 }
 
 lsh_call <- function(params, timers) {
-    invisible(.Call('_mlpack_lsh_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_lsh_call`, params, timers))
 }
 
 GetParamLSHSearchPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamLSHSearchPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamLSHSearchPtr`, params, paramName, inputModels)
 }
 
 SetParamLSHSearchPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamLSHSearchPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamLSHSearchPtr`, params, paramName, ptr))
 }
 
 SerializeLSHSearchPtr <- function(ptr) {
-    .Call('_mlpack_SerializeLSHSearchPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeLSHSearchPtr`, ptr)
 }
 
 DeserializeLSHSearchPtr <- function(str) {
-    .Call('_mlpack_DeserializeLSHSearchPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeLSHSearchPtr`, str)
 }
 
 mean_shift_call <- function(params, timers) {
-    invisible(.Call('_mlpack_mean_shift_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_mean_shift_call`, params, timers))
 }
 
 nbc_call <- function(params, timers) {
-    invisible(.Call('_mlpack_nbc_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_nbc_call`, params, timers))
 }
 
 GetParamNBCModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamNBCModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamNBCModelPtr`, params, paramName, inputModels)
 }
 
 SetParamNBCModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamNBCModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamNBCModelPtr`, params, paramName, ptr))
 }
 
 SerializeNBCModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeNBCModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeNBCModelPtr`, ptr)
 }
 
 DeserializeNBCModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeNBCModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeNBCModelPtr`, str)
+}
+
+nbc_classify_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_nbc_classify_call`, params, timers))
+}
+
+nbc_probabilities_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_nbc_probabilities_call`, params, timers))
+}
+
+nbc_train_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_nbc_train_call`, params, timers))
 }
 
 nca_call <- function(params, timers) {
-    invisible(.Call('_mlpack_nca_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_nca_call`, params, timers))
 }
 
 nmf_call <- function(params, timers) {
-    invisible(.Call('_mlpack_nmf_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_nmf_call`, params, timers))
 }
 
 pca_call <- function(params, timers) {
-    invisible(.Call('_mlpack_pca_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_pca_call`, params, timers))
 }
 
 perceptron_call <- function(params, timers) {
-    invisible(.Call('_mlpack_perceptron_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_perceptron_call`, params, timers))
 }
 
 GetParamPerceptronModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamPerceptronModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamPerceptronModelPtr`, params, paramName, inputModels)
 }
 
 SetParamPerceptronModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamPerceptronModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamPerceptronModelPtr`, params, paramName, ptr))
 }
 
 SerializePerceptronModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializePerceptronModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializePerceptronModelPtr`, ptr)
 }
 
 DeserializePerceptronModelPtr <- function(str) {
-    .Call('_mlpack_DeserializePerceptronModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializePerceptronModelPtr`, str)
+}
+
+perceptron_classify_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_perceptron_classify_call`, params, timers))
+}
+
+perceptron_train_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_perceptron_train_call`, params, timers))
 }
 
 preprocess_binarize_call <- function(params, timers) {
-    invisible(.Call('_mlpack_preprocess_binarize_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_preprocess_binarize_call`, params, timers))
 }
 
 preprocess_describe_call <- function(params, timers) {
-    invisible(.Call('_mlpack_preprocess_describe_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_preprocess_describe_call`, params, timers))
 }
 
 preprocess_one_hot_encoding_call <- function(params, timers) {
-    invisible(.Call('_mlpack_preprocess_one_hot_encoding_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_preprocess_one_hot_encoding_call`, params, timers))
 }
 
 preprocess_scale_call <- function(params, timers) {
-    invisible(.Call('_mlpack_preprocess_scale_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_preprocess_scale_call`, params, timers))
 }
 
 GetParamScalingModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamScalingModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamScalingModelPtr`, params, paramName, inputModels)
 }
 
 SetParamScalingModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamScalingModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamScalingModelPtr`, params, paramName, ptr))
 }
 
 SerializeScalingModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeScalingModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeScalingModelPtr`, ptr)
 }
 
 DeserializeScalingModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeScalingModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeScalingModelPtr`, str)
 }
 
 preprocess_split_call <- function(params, timers) {
-    invisible(.Call('_mlpack_preprocess_split_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_preprocess_split_call`, params, timers))
 }
 
 CreateParams <- function(bindingName) {
-    .Call('_mlpack_CreateParams', PACKAGE = 'mlpack', bindingName)
+    .Call(`_mlpack_CreateParams`, bindingName)
 }
 
 CreateTimers <- function() {
-    .Call('_mlpack_CreateTimers', PACKAGE = 'mlpack')
+    .Call(`_mlpack_CreateTimers`)
 }
 
 SetParamInt <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamInt', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamInt`, params, paramName, paramValue))
 }
 
 SetParamDouble <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamDouble', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamDouble`, params, paramName, paramValue))
 }
 
 SetParamString <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamString', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamString`, params, paramName, paramValue))
 }
 
 SetParamBool <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamBool', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamBool`, params, paramName, paramValue))
 }
 
 SetParamVecString <- function(params, paramName, str) {
-    invisible(.Call('_mlpack_SetParamVecString', PACKAGE = 'mlpack', params, paramName, str))
+    invisible(.Call(`_mlpack_SetParamVecString`, params, paramName, str))
 }
 
 SetParamVecInt <- function(params, paramName, ints) {
-    invisible(.Call('_mlpack_SetParamVecInt', PACKAGE = 'mlpack', params, paramName, ints))
+    invisible(.Call(`_mlpack_SetParamVecInt`, params, paramName, ints))
 }
 
 SetParamMat <- function(params, paramName, paramValue, transpose) {
-    invisible(.Call('_mlpack_SetParamMat', PACKAGE = 'mlpack', params, paramName, paramValue, transpose))
+    invisible(.Call(`_mlpack_SetParamMat`, params, paramName, paramValue, transpose))
 }
 
 SetParamUMat <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamUMat', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamUMat`, params, paramName, paramValue))
 }
 
 SetParamRow <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamRow', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamRow`, params, paramName, paramValue))
 }
 
 SetParamURow <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamURow', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamURow`, params, paramName, paramValue))
 }
 
 SetParamCol <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamCol', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamCol`, params, paramName, paramValue))
 }
 
 SetParamUCol <- function(params, paramName, paramValue) {
-    invisible(.Call('_mlpack_SetParamUCol', PACKAGE = 'mlpack', params, paramName, paramValue))
+    invisible(.Call(`_mlpack_SetParamUCol`, params, paramName, paramValue))
 }
 
 SetParamMatWithInfo <- function(params, paramName, dimensions, paramValue) {
-    invisible(.Call('_mlpack_SetParamMatWithInfo', PACKAGE = 'mlpack', params, paramName, dimensions, paramValue))
+    invisible(.Call(`_mlpack_SetParamMatWithInfo`, params, paramName, dimensions, paramValue))
 }
 
 GetParamInt <- function(params, paramName) {
-    .Call('_mlpack_GetParamInt', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamInt`, params, paramName)
 }
 
 GetParamDouble <- function(params, paramName) {
-    .Call('_mlpack_GetParamDouble', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamDouble`, params, paramName)
 }
 
 GetParamString <- function(params, paramName) {
-    .Call('_mlpack_GetParamString', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamString`, params, paramName)
 }
 
 GetParamBool <- function(params, paramName) {
-    .Call('_mlpack_GetParamBool', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamBool`, params, paramName)
 }
 
 GetParamVecString <- function(params, paramName) {
-    .Call('_mlpack_GetParamVecString', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamVecString`, params, paramName)
 }
 
 GetParamVecInt <- function(params, paramName) {
-    .Call('_mlpack_GetParamVecInt', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamVecInt`, params, paramName)
 }
 
 GetParamMat <- function(params, paramName) {
-    .Call('_mlpack_GetParamMat', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamMat`, params, paramName)
 }
 
 GetParamUMat <- function(params, paramName) {
-    .Call('_mlpack_GetParamUMat', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamUMat`, params, paramName)
 }
 
 GetParamRow <- function(params, paramName) {
-    .Call('_mlpack_GetParamRow', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamRow`, params, paramName)
 }
 
 GetParamURow <- function(params, paramName) {
-    .Call('_mlpack_GetParamURow', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamURow`, params, paramName)
 }
 
 GetParamCol <- function(params, paramName) {
-    .Call('_mlpack_GetParamCol', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamCol`, params, paramName)
 }
 
 GetParamUCol <- function(params, paramName) {
-    .Call('_mlpack_GetParamUCol', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_GetParamUCol`, params, paramName)
 }
 
 IO_GetParamMatWithInfo <- function(params, paramName) {
-    .Call('_mlpack_IO_GetParamMatWithInfo', PACKAGE = 'mlpack', params, paramName)
+    .Call(`_mlpack_IO_GetParamMatWithInfo`, params, paramName)
 }
 
 ResetTimers <- function() {
-    invisible(.Call('_mlpack_ResetTimers', PACKAGE = 'mlpack'))
+    invisible(.Call(`_mlpack_ResetTimers`))
 }
 
 SetPassed <- function(params, paramName) {
-    invisible(.Call('_mlpack_SetPassed', PACKAGE = 'mlpack', params, paramName))
+    invisible(.Call(`_mlpack_SetPassed`, params, paramName))
+}
+
+capabilities <- function() {
+    .Call(`_mlpack_capabilities`)
 }
 
 radical_call <- function(params, timers) {
-    invisible(.Call('_mlpack_radical_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_radical_call`, params, timers))
 }
 
 random_forest_call <- function(params, timers) {
-    invisible(.Call('_mlpack_random_forest_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_random_forest_call`, params, timers))
 }
 
 GetParamRandomForestModelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamRandomForestModelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamRandomForestModelPtr`, params, paramName, inputModels)
 }
 
 SetParamRandomForestModelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamRandomForestModelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamRandomForestModelPtr`, params, paramName, ptr))
 }
 
 SerializeRandomForestModelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeRandomForestModelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeRandomForestModelPtr`, ptr)
 }
 
 DeserializeRandomForestModelPtr <- function(str) {
-    .Call('_mlpack_DeserializeRandomForestModelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeRandomForestModelPtr`, str)
 }
 
 random_forest_classify_call <- function(params, timers) {
-    invisible(.Call('_mlpack_random_forest_classify_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_random_forest_classify_call`, params, timers))
 }
 
 random_forest_probabilities_call <- function(params, timers) {
-    invisible(.Call('_mlpack_random_forest_probabilities_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_random_forest_probabilities_call`, params, timers))
 }
 
 random_forest_train_call <- function(params, timers) {
-    invisible(.Call('_mlpack_random_forest_train_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_random_forest_train_call`, params, timers))
 }
 
 softmax_regression_call <- function(params, timers) {
-    invisible(.Call('_mlpack_softmax_regression_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_softmax_regression_call`, params, timers))
 }
 
 GetParamSoftmaxRegressionPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamSoftmaxRegressionPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamSoftmaxRegressionPtr`, params, paramName, inputModels)
 }
 
 SetParamSoftmaxRegressionPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamSoftmaxRegressionPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamSoftmaxRegressionPtr`, params, paramName, ptr))
 }
 
 SerializeSoftmaxRegressionPtr <- function(ptr) {
-    .Call('_mlpack_SerializeSoftmaxRegressionPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeSoftmaxRegressionPtr`, ptr)
 }
 
 DeserializeSoftmaxRegressionPtr <- function(str) {
-    .Call('_mlpack_DeserializeSoftmaxRegressionPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeSoftmaxRegressionPtr`, str)
+}
+
+softmax_regression_classify_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_softmax_regression_classify_call`, params, timers))
+}
+
+softmax_regression_probabilities_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_softmax_regression_probabilities_call`, params, timers))
+}
+
+softmax_regression_train_call <- function(params, timers) {
+    invisible(.Call(`_mlpack_softmax_regression_train_call`, params, timers))
 }
 
 sparse_coding_call <- function(params, timers) {
-    invisible(.Call('_mlpack_sparse_coding_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_sparse_coding_call`, params, timers))
 }
 
 GetParamSparseCodingPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamSparseCodingPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamSparseCodingPtr`, params, paramName, inputModels)
 }
 
 SetParamSparseCodingPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamSparseCodingPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamSparseCodingPtr`, params, paramName, ptr))
 }
 
 SerializeSparseCodingPtr <- function(ptr) {
-    .Call('_mlpack_SerializeSparseCodingPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeSparseCodingPtr`, ptr)
 }
 
 DeserializeSparseCodingPtr <- function(str) {
-    .Call('_mlpack_DeserializeSparseCodingPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeSparseCodingPtr`, str)
 }
 
 test_r_binding_call <- function(params, timers) {
-    invisible(.Call('_mlpack_test_r_binding_call', PACKAGE = 'mlpack', params, timers))
+    invisible(.Call(`_mlpack_test_r_binding_call`, params, timers))
 }
 
 GetParamGaussianKernelPtr <- function(params, paramName, inputModels) {
-    .Call('_mlpack_GetParamGaussianKernelPtr', PACKAGE = 'mlpack', params, paramName, inputModels)
+    .Call(`_mlpack_GetParamGaussianKernelPtr`, params, paramName, inputModels)
 }
 
 SetParamGaussianKernelPtr <- function(params, paramName, ptr) {
-    invisible(.Call('_mlpack_SetParamGaussianKernelPtr', PACKAGE = 'mlpack', params, paramName, ptr))
+    invisible(.Call(`_mlpack_SetParamGaussianKernelPtr`, params, paramName, ptr))
 }
 
 SerializeGaussianKernelPtr <- function(ptr) {
-    .Call('_mlpack_SerializeGaussianKernelPtr', PACKAGE = 'mlpack', ptr)
+    .Call(`_mlpack_SerializeGaussianKernelPtr`, ptr)
 }
 
 DeserializeGaussianKernelPtr <- function(str) {
-    .Call('_mlpack_DeserializeGaussianKernelPtr', PACKAGE = 'mlpack', str)
+    .Call(`_mlpack_DeserializeGaussianKernelPtr`, str)
 }
 

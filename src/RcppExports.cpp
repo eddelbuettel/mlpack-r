@@ -758,6 +758,39 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// hoeffding_tree_classify_call
+void hoeffding_tree_classify_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_hoeffding_tree_classify_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    hoeffding_tree_classify_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// hoeffding_tree_probabilities_call
+void hoeffding_tree_probabilities_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_hoeffding_tree_probabilities_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    hoeffding_tree_probabilities_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// hoeffding_tree_train_call
+void hoeffding_tree_train_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_hoeffding_tree_train_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    hoeffding_tree_train_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
 // image_converter_call
 void image_converter_call(SEXP params, SEXP timers);
 RcppExport SEXP _mlpack_image_converter_call(SEXP paramsSEXP, SEXP timersSEXP) {
@@ -1241,6 +1274,39 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// linear_svm_classify_call
+void linear_svm_classify_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_linear_svm_classify_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    linear_svm_classify_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// linear_svm_scores_call
+void linear_svm_scores_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_linear_svm_scores_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    linear_svm_scores_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// linear_svm_train_call
+void linear_svm_train_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_linear_svm_train_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    linear_svm_train_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
 // lmnn_call
 void lmnn_call(SEXP params, SEXP timers);
 RcppExport SEXP _mlpack_lmnn_call(SEXP paramsSEXP, SEXP timersSEXP) {
@@ -1528,6 +1594,39 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// nbc_classify_call
+void nbc_classify_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_nbc_classify_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    nbc_classify_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// nbc_probabilities_call
+void nbc_probabilities_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_nbc_probabilities_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    nbc_probabilities_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// nbc_train_call
+void nbc_train_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_nbc_train_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    nbc_train_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
 // nca_call
 void nca_call(SEXP params, SEXP timers);
 RcppExport SEXP _mlpack_nca_call(SEXP paramsSEXP, SEXP timersSEXP) {
@@ -1617,6 +1716,28 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< Rcpp::RawVector >::type str(strSEXP);
     rcpp_result_gen = Rcpp::wrap(DeserializePerceptronModelPtr(str));
     return rcpp_result_gen;
+END_RCPP
+}
+// perceptron_classify_call
+void perceptron_classify_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_perceptron_classify_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    perceptron_classify_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// perceptron_train_call
+void perceptron_train_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_perceptron_train_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    perceptron_train_call(params, timers);
+    return R_NilValue;
 END_RCPP
 }
 // preprocess_binarize_call
@@ -2076,6 +2197,16 @@ BEGIN_RCPP
     return R_NilValue;
 END_RCPP
 }
+// capabilities
+Rcpp::LogicalVector capabilities();
+RcppExport SEXP _mlpack_capabilities() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(capabilities());
+    return rcpp_result_gen;
+END_RCPP
+}
 // radical_call
 void radical_call(SEXP params, SEXP timers);
 RcppExport SEXP _mlpack_radical_call(SEXP paramsSEXP, SEXP timersSEXP) {
@@ -2234,6 +2365,39 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< Rcpp::RawVector >::type str(strSEXP);
     rcpp_result_gen = Rcpp::wrap(DeserializeSoftmaxRegressionPtr(str));
     return rcpp_result_gen;
+END_RCPP
+}
+// softmax_regression_classify_call
+void softmax_regression_classify_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_softmax_regression_classify_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    softmax_regression_classify_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// softmax_regression_probabilities_call
+void softmax_regression_probabilities_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_softmax_regression_probabilities_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    softmax_regression_probabilities_call(params, timers);
+    return R_NilValue;
+END_RCPP
+}
+// softmax_regression_train_call
+void softmax_regression_train_call(SEXP params, SEXP timers);
+RcppExport SEXP _mlpack_softmax_regression_train_call(SEXP paramsSEXP, SEXP timersSEXP) {
+BEGIN_RCPP
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type params(paramsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type timers(timersSEXP);
+    softmax_regression_train_call(params, timers);
+    return R_NilValue;
 END_RCPP
 }
 // sparse_coding_call
@@ -2419,6 +2583,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_SetParamHoeffdingTreeModelPtr", (DL_FUNC) &_mlpack_SetParamHoeffdingTreeModelPtr, 3},
     {"_mlpack_SerializeHoeffdingTreeModelPtr", (DL_FUNC) &_mlpack_SerializeHoeffdingTreeModelPtr, 1},
     {"_mlpack_DeserializeHoeffdingTreeModelPtr", (DL_FUNC) &_mlpack_DeserializeHoeffdingTreeModelPtr, 1},
+    {"_mlpack_hoeffding_tree_classify_call", (DL_FUNC) &_mlpack_hoeffding_tree_classify_call, 2},
+    {"_mlpack_hoeffding_tree_probabilities_call", (DL_FUNC) &_mlpack_hoeffding_tree_probabilities_call, 2},
+    {"_mlpack_hoeffding_tree_train_call", (DL_FUNC) &_mlpack_hoeffding_tree_train_call, 2},
     {"_mlpack_image_converter_call", (DL_FUNC) &_mlpack_image_converter_call, 2},
     {"_mlpack_kde_call", (DL_FUNC) &_mlpack_kde_call, 2},
     {"_mlpack_GetParamKDEModelPtr", (DL_FUNC) &_mlpack_GetParamKDEModelPtr, 3},
@@ -2461,6 +2628,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_SetParamLinearSVMModelPtr", (DL_FUNC) &_mlpack_SetParamLinearSVMModelPtr, 3},
     {"_mlpack_SerializeLinearSVMModelPtr", (DL_FUNC) &_mlpack_SerializeLinearSVMModelPtr, 1},
     {"_mlpack_DeserializeLinearSVMModelPtr", (DL_FUNC) &_mlpack_DeserializeLinearSVMModelPtr, 1},
+    {"_mlpack_linear_svm_classify_call", (DL_FUNC) &_mlpack_linear_svm_classify_call, 2},
+    {"_mlpack_linear_svm_scores_call", (DL_FUNC) &_mlpack_linear_svm_scores_call, 2},
+    {"_mlpack_linear_svm_train_call", (DL_FUNC) &_mlpack_linear_svm_train_call, 2},
     {"_mlpack_lmnn_call", (DL_FUNC) &_mlpack_lmnn_call, 2},
     {"_mlpack_local_coordinate_coding_call", (DL_FUNC) &_mlpack_local_coordinate_coding_call, 2},
     {"_mlpack_GetParamLocalCoordinateCodingPtr", (DL_FUNC) &_mlpack_GetParamLocalCoordinateCodingPtr, 3},
@@ -2486,6 +2656,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_SetParamNBCModelPtr", (DL_FUNC) &_mlpack_SetParamNBCModelPtr, 3},
     {"_mlpack_SerializeNBCModelPtr", (DL_FUNC) &_mlpack_SerializeNBCModelPtr, 1},
     {"_mlpack_DeserializeNBCModelPtr", (DL_FUNC) &_mlpack_DeserializeNBCModelPtr, 1},
+    {"_mlpack_nbc_classify_call", (DL_FUNC) &_mlpack_nbc_classify_call, 2},
+    {"_mlpack_nbc_probabilities_call", (DL_FUNC) &_mlpack_nbc_probabilities_call, 2},
+    {"_mlpack_nbc_train_call", (DL_FUNC) &_mlpack_nbc_train_call, 2},
     {"_mlpack_nca_call", (DL_FUNC) &_mlpack_nca_call, 2},
     {"_mlpack_nmf_call", (DL_FUNC) &_mlpack_nmf_call, 2},
     {"_mlpack_pca_call", (DL_FUNC) &_mlpack_pca_call, 2},
@@ -2494,6 +2667,8 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_SetParamPerceptronModelPtr", (DL_FUNC) &_mlpack_SetParamPerceptronModelPtr, 3},
     {"_mlpack_SerializePerceptronModelPtr", (DL_FUNC) &_mlpack_SerializePerceptronModelPtr, 1},
     {"_mlpack_DeserializePerceptronModelPtr", (DL_FUNC) &_mlpack_DeserializePerceptronModelPtr, 1},
+    {"_mlpack_perceptron_classify_call", (DL_FUNC) &_mlpack_perceptron_classify_call, 2},
+    {"_mlpack_perceptron_train_call", (DL_FUNC) &_mlpack_perceptron_train_call, 2},
     {"_mlpack_preprocess_binarize_call", (DL_FUNC) &_mlpack_preprocess_binarize_call, 2},
     {"_mlpack_preprocess_describe_call", (DL_FUNC) &_mlpack_preprocess_describe_call, 2},
     {"_mlpack_preprocess_one_hot_encoding_call", (DL_FUNC) &_mlpack_preprocess_one_hot_encoding_call, 2},
@@ -2533,6 +2708,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_IO_GetParamMatWithInfo", (DL_FUNC) &_mlpack_IO_GetParamMatWithInfo, 2},
     {"_mlpack_ResetTimers", (DL_FUNC) &_mlpack_ResetTimers, 0},
     {"_mlpack_SetPassed", (DL_FUNC) &_mlpack_SetPassed, 2},
+    {"_mlpack_capabilities", (DL_FUNC) &_mlpack_capabilities, 0},
     {"_mlpack_radical_call", (DL_FUNC) &_mlpack_radical_call, 2},
     {"_mlpack_random_forest_call", (DL_FUNC) &_mlpack_random_forest_call, 2},
     {"_mlpack_GetParamRandomForestModelPtr", (DL_FUNC) &_mlpack_GetParamRandomForestModelPtr, 3},
@@ -2547,6 +2723,9 @@ static const R_CallMethodDef CallEntries[] = {
     {"_mlpack_SetParamSoftmaxRegressionPtr", (DL_FUNC) &_mlpack_SetParamSoftmaxRegressionPtr, 3},
     {"_mlpack_SerializeSoftmaxRegressionPtr", (DL_FUNC) &_mlpack_SerializeSoftmaxRegressionPtr, 1},
     {"_mlpack_DeserializeSoftmaxRegressionPtr", (DL_FUNC) &_mlpack_DeserializeSoftmaxRegressionPtr, 1},
+    {"_mlpack_softmax_regression_classify_call", (DL_FUNC) &_mlpack_softmax_regression_classify_call, 2},
+    {"_mlpack_softmax_regression_probabilities_call", (DL_FUNC) &_mlpack_softmax_regression_probabilities_call, 2},
+    {"_mlpack_softmax_regression_train_call", (DL_FUNC) &_mlpack_softmax_regression_train_call, 2},
     {"_mlpack_sparse_coding_call", (DL_FUNC) &_mlpack_sparse_coding_call, 2},
     {"_mlpack_GetParamSparseCodingPtr", (DL_FUNC) &_mlpack_GetParamSparseCodingPtr, 3},
     {"_mlpack_SetParamSparseCodingPtr", (DL_FUNC) &_mlpack_SetParamSparseCodingPtr, 3},

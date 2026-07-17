@@ -28,9 +28,8 @@
 #'
 #' @export
 #' @examples
-
 #' # 
-#' # #' # \dontrun{
+#' # 
 #' # suppressMessages(library(mlpack)) # in case 'mlpack' is not yet loaded
 #' # X <-
 #' # as.matrix(read.csv("https://datasets.mlpack.org/admission_predict.csv",
@@ -48,7 +47,7 @@
 #' # 
 #' # model <- linear_regression_train(training=X_train,
 #' # training_responses=y_train)
-#' #   }
+#' #   
 linear_regression_train <- function(training,
                                     lambda = 0,
                                     training_responses = NA,
