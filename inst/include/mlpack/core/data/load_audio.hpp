@@ -19,6 +19,8 @@
 
 namespace mlpack {
 
+#ifndef MLPACK_DISABLE_DR_LIBS
+
 /**
  * ========================================
  *          Theoretical Concept.
@@ -99,7 +101,7 @@ inline eT Pow2(const size_t exponent,
                const typename std::enable_if_t<
                    std::is_integral<eT>::value>* = 0)
 {
-  return (eT(2) << exponent);
+  return (eT(1) << exponent);
 }
 
 template<typename eT>
@@ -515,6 +517,21 @@ bool LoadMP3(const std::string& file,
 
   return true;
 }
+
+#else // MLPACK_DISABLE_DR_LIBS
+
+template<typename eT>
+bool LoadAudio(const std::string /* file */,
+               arma::Mat<eT>& /* matrix */,
+               AudioOptions& opts)
+{
+  std::stringstream oss;
+  oss << "LoadAudio(): audio support was disabled at compile time "
+         "(MLPACK_DISABLE_DR_LIBS); rebuild without it to load audio.";
+  return HandleError(oss, opts);
+}
+
+#endif // MLPACK_DISABLE_DR_LIBS
 
 } //namespace mlpack
 
